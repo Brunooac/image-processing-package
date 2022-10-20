@@ -11,7 +11,7 @@ def plot_image(image):
 def plot_result(*args):
     number_images = len(args)
     fig, axis = plt.subplots(nrows=1, ncols=number_images, figsize=(12, 4))
-    names_list = ['image {}'.format(i) for i in range(i, number_images)]
+    names_list = ['image {}'.format(i) for i in range(1, number_images)]
     names_list.append('Result')
     for ax, name, image in zip(axis, names_list, args):
         ax.set_title(name)
